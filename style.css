@@ -1,0 +1,190 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  text-align: center;
+}
+
+.nav_auxiliar{
+  width: 100%;
+}
+
+.logo{
+  display: inline-block;
+  width: 65%;
+}
+
+.lateral{
+  width: 30%;
+  display: inline-block;
+  font-size: 30px;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+input[type='search']{
+  padding: 5px;
+}
+
+.navegacion{
+  margin-top: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-left: 15%;
+}
+
+.inicio{
+  margin-left: 5%;
+}
+
+.phone{
+  display: none;
+}
+
+.container{
+  background-image: url(imagenes/fondo1.jpg);
+  width: 85%;
+  margin: 30px auto;
+  border-radius: 40px;
+  border: 1px solid lightgrey;
+}
+
+.texto{
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  margin-left: 50px;
+  margin-top: 150px;
+}
+h1{
+  font-size: 60px;
+}
+.texto p{
+  font-size: 20px;
+  margin-top: 20px;
+}
+.imagen{
+  display: inline-block;
+  background-image: url(imagenes/principal.jpeg);
+  background-color: red;
+  width:50vh;
+  height:60vh;
+  background-size: cover;
+  margin: 20px 0;
+  border-radius: 30px;
+}
+
+.imagen img{
+  
+  
+  height: 500px;
+  width: 600px;
+}
+
+.target{
+  width: 450px;
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+}
+
+.target img{
+  width: 400px;
+  margin-left: 20px;
+  height: 300px;
+  border-radius: 20px;
+}
+.target p{
+  font-size: 20px;
+}
+
+.container_productos{
+  text-align: center;
+}
+
+.target button{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin : 10px 0;
+  background-color: #fcecdd8d;
+  font-weight: bold;
+  transition: 1s;
+}
+.target button:hover{
+  background-color:  rgb(253, 219, 224);
+  transition: 1s;
+  color: white;
+
+}
+section{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+#nosotros{
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#nosotros h2{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#nosotros p{
+  width: 90%;
+  font-size: 20px;
+}
+
+#contactenos iframe{
+  filter: grayscale(1);
+  width: 100%;
+}
+
+footer{
+  background-color: black;
+}
+
+footer li{
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 20px;
+  color:white;
+  margin-bottom: 20px;
+}
+.redes{
+  position: relative;
+  padding: 20px 0 0 0;
+}
+
+.redes-icono  {
+  position:absolute;
+  right: 20px;
+  bottom: 2px;
+}
+
+@media(max-width:767px){
+  .logo {
+  margin: auto;
+  }
+  .logo img{
+    width: 300px;
+  }
+  .lateral{
+    display: none;
+  }
+  .navegacion{
+    display: none;
+  }
+  .navegacion hamb{
+    display: inline-block;
+  }
+}
