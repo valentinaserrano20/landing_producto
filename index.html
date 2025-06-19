@@ -3,50 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/7fb5ff4237.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="imagenes/icon.png">
-  <title>Landing Producto</title>
+  <script src="https://kit.fontawesome.com/7fb5ff4237.js" crossorigin="anonymous"></script>  <!--se llaman los iconos desde mi kit de fontawesome -->
+  <link rel="stylesheet" href="style.css">                                                   <!--Se asocia el html con el archivo de estilos-->
+  <link rel="shortcut icon" href="imagenes/icon.png">                                        <!--se le ingresa un icono que se mostrara en la pestaña del navegador-->
+  <title>Landing Producto</title>                                                            <!--este es el tiyulo que tambien se mostrar en la pestaña del navegador-->
 </head>
 <body>
-  <header >
-    <div class="nav_auxiliar">
+  <header>                                                                                   <!--Declaramos las etiquetas principales que indicaran el flujo del contenido, en este caso es el header que tendra el encabezado-->
+    <div class="nav_auxiliar">                                                               <!--Esta es la primera navegacion-->
       <div class="hamb">
-        <a href="#"><i class="fa-solid fa-bars"></i></i></a>
+        <a href="#"><i class="fa-solid fa-bars"></i></a>                                     <!--icono de menu desplejable-->
       </div>
       <div class="logo">
-        <img src="imagenes/logo.png" alt="logo">
+        <img src="imagenes/logo.png" alt="logo">                                             <!--Logo de la pagina-->
       </div>
       <div class="shop">
-        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>                             <!--icono de comprar-->
       </div>
-      <div class="lateral">
-      <input type="search" placeholder="Buscar">
-      <i class="fa-solid fa-bag-shopping"></i>
-      <i class="fa-regular fa-heart"></i>
-      <i class="fa-regular fa-circle-user"></i>
+      <div class="lateral">                                                                  <!--Esta ira al lado del logo-->
+        <input type="search" placeholder="Buscar">                                           <!--Campo de entrada de tipo search, este cumpliria la misma funcion que un text pero lo referiamos al buscador.-->
+        <i class="fa-solid fa-bag-shopping"></i>                                             <!--Icono de compra-->
+        <i class="fa-regular fa-heart"></i>                                                  <!--Icono de favoritos-->
+        <i class="fa-regular fa-circle-user"></i>                                            <!--Icono de Perfil-->
       </div>
     </div>
-    <nav class="navegacion">
-      <a href="#inicio" class="inicio">Inicio</a>
+    <!--declaramos la segunda navegacion que ira despues de la primera-->
+    <nav class="navegacion">                                                                           
+      <a href="#inicio" class="inicio">Inicio</a>                                            <!--Estos son los elmentos de la navegacion como inciio, comprar, nosotros y contactenos, el primero lleva una clase ya que a este le dare estilos adicionales.-->
       <a href="#comprar">Comprar</a>
       <a href="#nosotros">Nosotros</a>
-      <a href="contactenos">Contactenos</a>
+      <a href="#contactenos">Contactenos</a>
     </nav>
   </header>
-  <main>
-    <div class="container" id="Inicio">
-      <div class="texto">
+  <main>                                                                                     <!--Esta es la etiqueta principal, la cual referencia a el contenido.-->
+    <div class="container" id="inicio">                                                      <!--creamos un container que contendra, la imagen y el texto de una primera caja, es el inicio asi que le damos el id para que cuando la persona lo presione, este la dirija alli-->
+      <div class="texto">                                                                    <!--este div contendra el texto dle contenedor principal-->
         <h1>Joyeria</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea inventore voluptas velit quia similique itaque omnis numquam, nemo blanditiis animi magni suscipit amet nostrum dolor sint ut ducimus natus incidunt?</p>
         <p>#JoyeriaSAVXY</p>
       </div>
-      <div class="imagen">
+      <div class="imagen">                                                                   <!--este contendra la imagen del contenedor principal, en este caso esta vacia ya que inserte la imagen como un background image en la hoja de estilos-->
       </div>
     </div>
-    <section id="comprar" class="seccion">
-      <div class="container_productos">
-        <div class="target">
+    <section id="comprar" class="seccion">                                                   <!--aqui cree una seccion que dirigira a la persona desde comprar a la seccion de productos-->
+      <div class="container_productos">                                                      <!--Este container contendra las tarjetas de los productos-->
+        <div class="target">                                                                 <!--Esta es la tarjeta de un producto la cual contiene la imagen, la descripcion y el precio, con su boton de compra-->
           <img src="imagenes/perlas.jpeg" alt="perlas">
           <p>Perlas</p>
           <p>$99999</p>
@@ -54,52 +55,52 @@
         </div>
         <div class="target">
           <img src="imagenes/sol.jpeg" alt="sol">
-          <p>Perlas</p>
+          <p>Perlas Sol</p>
           <p>$99999</p>
           <button>AGREGAR A LA BOLSA</button>
         </div>
         <div class="target">
           <img src="imagenes/verde.jpeg" alt="verde">
-          <p>Perlas</p>
+          <p>Perlas Verde</p>
           <p>$99999</p>
           <button>AGREGAR A LA BOLSA</button>
         </div>
         <div class="target">
           <img src="imagenes/pulser.jfif" alt="pulsera">
-          <p>Perlas</p>
+          <p>Pulsera de Perlas</p>
           <p>$99999</p>
           <button>AGREGAR A LA BOLSA</button>
         </div>
         <div class="target">
           <img src="imagenes/pulsera1.jfif" alt="pulsera1">
-          <p>Perlas</p>
+          <p>Pulsera Flores</p>
           <p>$99999</p>
           <button>AGREGAR A LA BOLSA</button>
         </div>
         <div class="target">
           <img src="imagenes/ring.jfif" alt="anillo">
-          <p>Perlas</p>
+          <p>Anillo Rosa</p>
           <p>$99999</p>
           <button>AGREGAR A LA BOLSA</button>
         </div>
       </div>
     </section>
-    <section id="nosotros" class="seccion">
+    <section id="nosotros" class="seccion">                                                  <!--Aqui abrimos otra seccion que contendra la informacion del emprendimiento o su historia-->
       <h2>Sobre Nosotros</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo a qui aspernatur commodi nobis tenetur officia, et fugiat ipsam omnis? Culpa, qui cumque. Doloremque enim aspernatur provident voluptates incidunt voluptatibus quos asperiores in dolore voluptas perferendis optio, minima quia, cum quaerat repudiandae ipsam, recusandae vel ut? Doloribus eligendi itaque vero, velit nemo impedit modi suscipit libero exercitationem enim magnam nihil neque illum delectus! Aut, porro modi? Iusto voluptatibus rerum numquam repellendus quasi ad libero et quia, laboriosam reprehenderit! Doloribus repellat quisquam id consequuntur impedit porro nulla enim laborum qui totam ex officiis laboriosam, hic veritatis ab doloremque rem odit. Perferendis!</p>
     </section>
-    <section id="contactenos" class="seccion">
+    <section id="contactenos" class="seccion">                                               <!--y aqui es la seccion de contactar, la cual tiene un iframe de un mapa generado del lugar-->
       <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=bucaramanga,%20santander%20+(savxy)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
     </section>
   </main>
-  <footer>
+  <footer>                                                                                   <!--finalmente termianmos con la ultima etiqueta principal que sera el pie de pagina, este contiene los iconos del emprendimiento y sus "derechos"-->
     <ul class="redes">
       <li class="savxy"><p>SAVXY 2025</p></li>
-      <div class="redes-icono">
+      <span class="redes-icono">
         <li class="icon"><i class="fa-brands fa-square-facebook icono"></i></li>
         <li class="icon"><i class="fa-brands fa-square-x-twitter icono"></i></li>
         <li class="icon"><i class="fa-brands fa-instagram icono"></i></li>
-      </div>
+      </span>
     </ul>
   </footer>
 </body>

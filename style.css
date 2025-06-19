@@ -1,69 +1,63 @@
 *{
   padding: 0;
-  margin: 0;
+  margin: 0;                                  /*restablecemos los valores que el navegador tare por defecto */
   box-sizing: border-box;
 }
 
-header{
-  text-align: center;
-}
-
-.nav_auxiliar{
-  width: 100%;
-}
-
 .logo{
-  display: inline-block;
-  width: 65%;
+  display: inline-block;                     /*le damos un display block al logo para que se acomode al lado de la navegacion lateral*/                 
+  width: 65%;                                /*al tener un display block se me hace mejor trtabajar con porcentajes ya que como tiene que ser responsivo se adaptara mejor al cambiar el tamaño, en este caso tiene mas porque es el logo*/ 
+  text-align: center;                        /*al ser un elemento en linea, el tex align center funciona para centrar esta imagen*/ 
 }
 
-.lateral{
-  width: 30%;
+.lateral{                                 
+  width: 30%;                                /*esta es la navegacion que va al aldo del logo por lo que tiene que adquirir el porcentaje faltante al 100% aunque este 100% nunca es fijo*/ 
   display: inline-block;
-  font-size: 30px;
-  vertical-align: top;
-  margin-top: 30px;
+  font-size: 30px;                          /*como los iconos estan referenciados con una etiqueta i esta funciona de la misma forma que un texto y puedo aumentarles su tamaño con font size*/ 
+  vertical-align: top;                      /*asi puedo modificar el lugar donde se encuentra esta navegacion verticalmente ya que si no se apliacara quedaria al lado de la imagen pero en la parte de abajo*/ 
+  margin-top: 30px;                         /*y se le da un margin top para centrarla*/ 
 }
 
-input[type='search']{
+input[type='search']{                      /*a la entrada de texto le damos un respiro o un espacio por dentro para que se vea mejor*/ 
   padding: 5px;
 }
 
 .navegacion{
-  margin-top: 20px;
+  margin-top: 20px;                        /*le damos un espacio o margen que separe las dos navegaciones*/ 
 }
+
 a{
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  margin-left: 15%;
+  text-decoration: none;                  /*al ser etiquetas de enlace esta esta subrayada y esto hace que se quite */ 
+  color: black;                         /*tambien viene de color azul, entonces la pasamos a negro, que combina con el resto de contenido*/ 
+  font-size: 20px;                       
+  margin-left: 15%;                       /*aqui le damos un margen general para que se separe*/ 
 }
 
 .inicio{
-  margin-left: 5%;
+  margin-left: 5%;                        /*aqui modfiicamos el margen general para que este tenga un margen mas pequeño y se vea mejor*/ 
 }
 
 .hamb,.shop{
-  display: none;
+  display: none;                          /*ocultamos estos iconos que seran usados para el breakpoint mobile*/ 
 }
 
 .container{
-  background-image: url(imagenes/fondo1.jpg);
-  width: 80%;
-  margin: 30px auto;
-  border-radius: 40px;
+  background-image: url(imagenes/fondo1.jpg);       /*ponemos una imagen de fondo a nuestro container*/ 
+  width: 80%;                                       /*ocupara el 80% de la pantalla*/ 
+  margin: 30px auto;                                /*tiene un margin que separa de arriba y abajo de 30px y a los lados es automatico, para que se centre*/ 
+  border-radius: 40px;                              
   border: 1px solid lightgrey;
 }
 
 .texto{
-  display: inline-block;
-  width: 40%;
-  vertical-align: top;
+  display: inline-block;                              /*usamos inline block para que esta caja se ubique al aldo de la foto*/ 
+  width: 30%;                                         /*ocupamos el 30% del contenedor para el texto*/ 
+  vertical-align: top;                                /*le cambiamos su lugar verticalmente*/ 
   margin-left: 50px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 h1{
-  font-size: 60px;
+  font-size: 60px;                                  
 }
 .texto p{
   font-size: 20px;
@@ -71,25 +65,26 @@ h1{
 }
 .imagen{
   display: inline-block;
-  background-image: url(imagenes/principal.jpeg);
-  background-color: red;
-  width:40%;
-  height:70vh;
-  background-size: cover;
-  margin: 20px 0 20px 140px;
+  background-image: url(imagenes/principal.jpeg);                /*agregamos la imagen al bloque que esta al aldo del texto*/ 
+  width:39%;                                                     /*este tendra un porcentaje del 39% del contenedor*/ 
+  height:62vh;                                                   /*le damos de alto el 62% de la altura visible del navegador*/ 
+  background-size: cover;                                        /*esto hara que la imagen se amolde al tamaño que le dimos*/ 
+  margin: 20px 0 20px 140px;                                     /*aqui tendra un margin de arriba y abajo de 20px y a la izquierda 140px*/ 
   border-radius: 30px;
 }
 
+.container_productos{
+  text-align: center;                                           /*centramos las tarjetas y su contenido*/                
+}
+
 .target{
-  width: 450px;
-  display: inline-block;
-  padding: 10px;
-  margin: 20px;
+  width: 32%;                                                   /*esta es la tarjeta de los productos y tendra un ancho en pantalla de 32%*/                 
+  display: inline-block;                                        /*permite que esta pueda agruparse en linea con las demas tarjetas*/
+  padding: 10px;                                   
 }
 
 .target img{
-  width: 400px;
-  margin-left: 20px;
+  width: 90%;                                                  /*esta e sla imagen de la tarjeta y tendra un ancho del 90% de la misma*/
   height: 300px;
   border-radius: 20px;
 }
@@ -97,26 +92,22 @@ h1{
   font-size: 20px;
 }
 
-.container_productos{
-  text-align: center;
-}
-
 .target button{
   padding: 10px;
   border-radius: 10px;
-  border: none;
+  border: none;                                                 /*le quitamos el borde al boton*/
   margin : 10px 0;
   background-color: #fcecdd8d;
-  font-weight: bold;
-  transition: 1s;
+  font-weight: bold;                                            /*le damos un peso de letra por asi decirlo y que este en negrilla*/
+  transition: 1s;                                               /*agregamos una transicion aqui para que el siguiente estilo no se vea tan brusco*/                       
 }
-.target button:hover{
+.target button:hover{                                           /*aqui declaramos que al presionar el boton va a cambiar su color de fondo y se letra*/
   background-color:  rgb(253, 219, 224);
   transition: 1s;
   color: white;
 
 }
-section{
+section{                                                        /*en este caso se aplicara tanto para la seccion de nosotros como la seccion de contactenos*/
   margin-top: 30px;
   margin-left: 20px;
 }
@@ -138,8 +129,8 @@ section{
 }
 
 #contactenos iframe{
-  filter: grayscale(1);
-  width: 100%;
+  filter: grayscale(1);                    /*aqui le aplicamos un filtro para que la escala de grises se aplique en el iframe que permite el contenido dinamico, en este caso el mapa*/
+  width: 100%;      
 }
 
 footer{
@@ -159,7 +150,7 @@ footer li{
 }
 
 .redes-icono  {
-  position:absolute;
+  position:absolute;            /*para poder aplicar esta posicion su elemento padre debe tener una posicion relativa para que no se salga del contenido*/
   right: 20px;
   bottom: 2px;
 }
@@ -179,7 +170,8 @@ footer li{
   }
   .imagen{
     margin: 0;
-    width: 45%;
+    width: 50%;
+    height: 500px;
     margin-left: 20px;
   }
   .target{
@@ -194,17 +186,14 @@ footer li{
 }
 @media(max-width:767px){
   .nav_auxiliar{
-  position: fixed;
-  top: 10px;
-  width: 100%;
+  position: relative;                  
   height: 80px;
   background-color: white;
-  z-index: 1;
   border-bottom: 1px solid lightgray;
+  text-align: center;
   }
   .logo img {
-  width: 330px;
-  vertical-align: middle;
+  width: 100%;                      /* aqui se puede tomar el 100% ya que los iconos que estan a los lados estan en una posicion absolute */
   }
   .lateral{
     display: none;
@@ -215,18 +204,17 @@ footer li{
   .hamb,.shop{
     display: inline-block;
     position: absolute; 
-    top: 10px;
+    top: 20px;
   }
   .hamb{
     left:10px;
   }
-  .hamb a,.shop a{
-    font-size: 35px;
-  }
   .shop{
     right:20px;
   }
-
+  .hamb a,.shop a{
+    font-size: 35px;
+  }
   .texto, .imagen {
     display: block;
     width: 80%;
@@ -235,15 +223,13 @@ footer li{
   
   .imagen {
     height: 500px; 
-    margin-left: auto;
-    margin-right: auto;
-    background-size: cover;
-    background-position: center;
+    margin: 30px auto;
   }
   .target{
     width: 40%;
   }
   .target img{
     width: 90%;
+    height: 300px;
   }
 }
