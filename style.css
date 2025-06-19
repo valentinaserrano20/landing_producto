@@ -53,8 +53,8 @@ a{
   display: inline-block;                              /*usamos inline block para que esta caja se ubique al aldo de la foto*/ 
   width: 30%;                                         /*ocupamos el 30% del contenedor para el texto*/ 
   vertical-align: top;                                /*le cambiamos su lugar verticalmente*/ 
+  margin-top: 25px;
   margin-left: 50px;
-  margin-top: 100px;
 }
 h1{
   font-size: 60px;                                  
@@ -62,12 +62,13 @@ h1{
 .texto p{
   font-size: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .imagen{
   display: inline-block;
   background-image: url(imagenes/principal.jpeg);                /*agregamos la imagen al bloque que esta al aldo del texto*/ 
   width:39%;                                                     /*este tendra un porcentaje del 39% del contenedor*/ 
-  height:62vh;                                                   /*le damos de alto el 62% de la altura visible del navegador*/ 
+  height:65vh;                                                   /*le damos de alto el 62% de la altura visible del navegador*/ 
   background-size: cover;                                        /*esto hara que la imagen se amolde al tamaño que le dimos*/ 
   margin: 20px 0 20px 140px;                                     /*aqui tendra un margin de arriba y abajo de 20px y a la izquierda 140px*/ 
   border-radius: 30px;
@@ -124,13 +125,12 @@ section{                                                        /*en este caso s
 }
 
 #nosotros p{
-  width: 90%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #contactenos iframe{
   filter: grayscale(1);                    /*aqui le aplicamos un filtro para que la escala de grises se aplique en el iframe que permite el contenido dinamico, en este caso el mapa*/
-  width: 100%;      
+  width: 95%;      
 }
 
 footer{
@@ -171,7 +171,7 @@ footer li{
   .imagen{
     margin: 0;
     width: 50%;
-    height: 500px;
+    height: 400px;
     margin-left: 20px;
   }
   .target{
@@ -194,6 +194,7 @@ footer li{
   }
   .logo img {
   width: 100%;                      /* aqui se puede tomar el 100% ya que los iconos que estan a los lados estan en una posicion absolute */
+  height: 70px;
   }
   .lateral{
     display: none;
@@ -218,18 +219,29 @@ footer li{
   .texto, .imagen {
     display: block;
     width: 80%;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
   }
   
-  .imagen {
-    height: 500px; 
+  .imagen { 
     margin: 30px auto;
-  }
-  .target{
-    width: 40%;
   }
   .target img{
     width: 90%;
-    height: 300px;
+    height: 250px;
+  }
+}
+
+@media(max-width:480px){
+  .texto{
+    margin: 10px auto;
+  }
+  .imagen{
+    height: 350px;
+  }
+  .target{
+    display: block;
+    width:70%;
+    margin:0 auto;
   }
 }
